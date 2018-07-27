@@ -423,8 +423,8 @@ export function getBoundsForNode(node) {
   if (!node.getBoundingClientRect) return node
 
   let rect = node.getBoundingClientRect(),
-    left = rect.left + pageOffset('left'),
-    top = rect.top + pageOffset('top')
+    left = rect.left, // + pageOffset('left'),
+    top = rect.top; // + pageOffset('top')
 
   return {
     top,
