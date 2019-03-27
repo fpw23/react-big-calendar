@@ -104,12 +104,6 @@ button.rbc-input::-moz-focus-inner {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -233,6 +227,14 @@ button.rbc-input::-moz-focus-inner {
 .rbc-event-continues-later {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+.rbc-event-continues-day-after {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-event-continues-day-prior {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .rbc-row {
   display: -webkit-flex;
@@ -462,8 +464,7 @@ button.rbc-input::-moz-focus-inner {
   bottom: 0;
   left: 0;
   position: absolute;
-  right: 0;
-  margin-right: 10px;
+  right: 10px;
   top: 0;
 }
 .rbc-day-slot .rbc-events-container.rbc-is-rtl {
@@ -550,9 +551,6 @@ button.rbc-input::-moz-focus-inner {
   box-sizing: content-box;
   width: 100%;
   position: relative;
-}
-.rbc-time-view .rbc-allday-cell + .rbc-allday-cell {
-  border-left: 1px solid #ddd;
 }
 .rbc-time-view .rbc-allday-events {
   position: relative;
